@@ -1,0 +1,35 @@
+header{
+    background-color: #FF8093;
+    color: #1A1A1A;
+    padding: 1rem;
+    font-size: 20px;
+
+    > nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+
+        >
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+
+            >
+
+            li {
+                a {
+                    color: #1A1A1A;
+                    text-decoration: none;
+                    font-weight: bold;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
