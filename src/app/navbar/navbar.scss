@@ -1,25 +1,25 @@
-header{
+header {
     background-color: #FF8093;
     color: #1A1A1A;
     padding: 1rem;
     font-size: 20px;
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
 
     > nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center; 
         align-items: center;
-        justify-content: center;
 
-        >
-
-        ul {
+        > ul {
             list-style: none;
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
 
-            >
-
-            li {
+            > li {
                 a {
                     color: #1A1A1A;
                     text-decoration: none;
