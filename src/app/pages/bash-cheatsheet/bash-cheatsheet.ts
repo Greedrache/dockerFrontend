@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './bash-cheatsheet.html',
   styleUrls: ['./bash-cheatsheet.scss'],
 })
-export class BashCheatsheet {}
+export class BashCheatsheet {
+  copyToClipboard(text: string): void {
+    navigator.clipboard.writeText(text).then(() => {
+    }).catch(err => {
+    });
+  }
+}

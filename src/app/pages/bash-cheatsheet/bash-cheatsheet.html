@@ -1,1 +1,96 @@
-<p>bash-cheatsheet works!</p>
+<div class="cheatsheet-container">
+    <header class="cheatsheet-header">
+        <h1>Bash <span class="highlight">Essentials</span></h1>
+        <p>The actual daily toolkit for managing files, system permissions, and server environments.</p>
+    </header>
+
+    <div class="cheatsheet-grid">
+        <div class="cheat-card">
+            <h2>1. Navigation</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">List files & folders in current directory:</span>
+                    <div class="code-wrapper">
+                        <pre><code>ls -la</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('ls -la')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Move into a specific folder:</span>
+                    <div class="code-wrapper">
+                        <pre><code>cd &lt;folder-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('cd <folder-name>')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Go up one folder level (exit directory):</span>
+                    <div class="code-wrapper">
+                        <pre><code>cd ../</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('cd ../')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cheat-card">
+            <h2>2. Files & Editing</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Create or edit a file directly in the terminal:</span>
+                    <div class="code-wrapper">
+                        <pre><code>nano &lt;file-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('nano <file-name>')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Create a new folder:</span>
+                    <div class="code-wrapper">
+                        <pre><code>mkdir &lt;folder-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('mkdir <folder-name>')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Force delete a file or folder permanently:</span>
+                    <div class="code-wrapper">
+                        <pre><code>rm -rf &lt;file-or-folder-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('rm -rf <file-or-folder-name>')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cheat-card">
+            <h2>3. Admin & Documentation</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Execute a command with root/admin privileges:</span>
+                    <div class="code-wrapper">
+                        <pre><code>sudo &lt;command&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('sudo <command>')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Open the official manual page for a command:</span>
+                    <div class="code-wrapper">
+                        <pre><code>man &lt;command&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('man <command>')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Display quick inline help summary:</span>
+                    <div class="code-wrapper">
+                        <pre><code>&lt;command&gt; --help</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('<command> --help')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Filter outputs (crucial for hunting logs):</span>
+                    <div class="code-wrapper">
+                        <pre><code>&lt;command&gt; | grep &lt;keyword&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('<command> | grep <keyword>')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

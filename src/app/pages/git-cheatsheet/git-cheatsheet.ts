@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './git-cheatsheet.html',
   styleUrl: './git-cheatsheet.scss',
 })
-export class GitCheatsheet {}
+export class GitCheatsheet {
+  copyToClipboard(text: string): void {
+    navigator.clipboard.writeText(text).then(() => {
+    }).catch(err => {
+    });
+  }
+}

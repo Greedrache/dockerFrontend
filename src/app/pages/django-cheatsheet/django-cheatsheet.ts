@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './django-cheatsheet.html',
   styleUrl: './django-cheatsheet.scss',
 })
-export class DjangoCheatsheet {}
+export class DjangoCheatsheet {
+  copyToClipboard(text: string): void {
+    navigator.clipboard.writeText(text).then(() => {
+    }).catch(err => {
+    });
+  }
+}

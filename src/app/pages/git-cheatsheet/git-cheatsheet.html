@@ -1,1 +1,82 @@
-<p>git-cheatsheet works!</p>
+<div class="cheatsheet-container">
+    <header class="cheatsheet-header">
+        <h1>Git <span class="highlight">Cheatsheet</span></h1>
+        <p>Essential Git commands for your daily workflow — quick, clean, and straightforward.</p>
+    </header>
+
+    <div class="cheatsheet-grid">
+        <div class="cheat-card">
+            <h2>1. Setup & Initialization</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Initialize a new local repository:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git init</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git init')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Clone an existing repository:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git clone &lt;url&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git clone <url>')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cheat-card">
+            <h2>2. Daily Workflow</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Check the status of your files:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git status</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git status')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Add changes to the staging area:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git add .</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git add .')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Commit your staged changes:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git commit -m "your commit message"</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git commit -m &quot;your commit message&quot;')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Push your changes to the remote repository:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git push origin &lt;branch-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git push origin <branch-name>')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cheat-card">
+            <h2>3. Branching & Merging</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Create and switch to a new branch:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git checkout -b &lt;branch-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git checkout -b <branch-name>')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Merge a branch into your current branch:</span>
+                    <div class="code-wrapper">
+                        <pre><code>git merge &lt;branch-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('git merge <branch-name>')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

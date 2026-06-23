@@ -1,1 +1,89 @@
-<p>django-cheatsheet works!</p>
+<div class="cheatsheet-container">
+    <header class="cheatsheet-header">
+        <h1>Django & DRF <span class="highlight">Essentials</span></h1>
+        <p>Core workflow for environment setups, database migrations, and local servers.</p>
+    </header>
+
+    <div class="cheatsheet-grid">
+        <div class="cheat-card">
+            <h2>1. Environment Setup</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Create virtual environment:</span>
+                    <div class="code-wrapper">
+                        <pre><code>python -m venv venv</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('python -m venv venv')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Activate environment (Windows):</span>
+                    <div class="code-wrapper">
+                        <pre><code>venv\Scripts\activate</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('venv\\Scripts\\activate')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Activate environment (macOS & Linux):</span>
+                    <div class="code-wrapper">
+                        <pre><code>source venv/bin/activate</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('source venv/bin/activate')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Install Django & Django REST Framework:</span>
+                    <div class="code-wrapper">
+                        <pre><code>pip install django djangorestframework</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('pip install django djangorestframework')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cheat-card">
+            <h2>2. Database & Server <br>(Only Python)</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Create migration files based on model changes:</span>
+                    <div class="code-wrapper">
+                        <pre><code>python manage.py makemigrations</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('python manage.py makemigrations')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Apply migrations to the database:</span>
+                    <div class="code-wrapper">
+                        <pre><code>python manage.py migrate</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('python manage.py migrate')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Start the local development server:</span>
+                    <div class="code-wrapper">
+                        <pre><code>python manage.py runserver</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('python manage.py runserver')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cheat-card">
+            <h2>3. Dependencies</h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <span class="description">Save installed packages to file:</span>
+                    <div class="code-wrapper">
+                        <pre><code>pip freeze &gt; requirements.txt</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('pip freeze > requirements.txt')">Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <span class="description">Install dependencies from file:</span>
+                    <div class="code-wrapper">
+                        <pre><code>pip install -r requirements.txt</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('pip install -r requirements.txt')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
