@@ -1,14 +1,14 @@
-<div class="cheatsheet-container">
+<main class="cheatsheet-container">
     <header class="cheatsheet-header">
-        <div class="django-logo-wrapper">
+        <figure class="django-logo-wrapper">
             <img src="assets/django.png" alt="Django Logo" class="django-logo">
-        </div>
+        </figure>
         <h1>Django & DRF <span class="highlight">Essentials</span></h1>
         <p>Core workflow for environment setups, database migrations, and local servers.</p>
     </header>
 
-    <div class="cheatsheet-grid">
-        <div class="cheat-card">
+    <section class="cheatsheet-grid">
+        <article class="cheat-card">
             <h2>
                 <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path
@@ -21,7 +21,7 @@
             </h2>
             <div class="command-group">
                 <div class="command-item">
-                    <span class="description">Create virtual environment:</span>
+                    <p class="description">Create virtual environment:</p>
                     <div class="code-wrapper">
                         <pre><code>python -m venv venv</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('python -m venv venv')"
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="command-item">
-                    <span class="description">Activate environment (Windows):</span>
+                    <p class="description">Activate environment (Windows):</p>
                     <div class="code-wrapper">
                         <pre><code>venv\Scripts\activate</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('venv\\Scripts\\activate')"
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="command-item">
-                    <span class="description">Activate environment (macOS & Linux):</span>
+                    <p class="description">Activate environment (macOS & Linux):</p>
                     <div class="code-wrapper">
                         <pre><code>source venv/bin/activate</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('source venv/bin/activate')"
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="command-item">
-                    <span class="description">Install Django & DRF:</span>
+                    <p class="description">Install Django & DRF:</p>
                     <div class="code-wrapper">
                         <pre><code>pip install django djangorestframework</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('pip install django djangorestframework')"
@@ -77,9 +77,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="cheat-card">
+        <article class="cheat-card">
             <h2>
                 <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -90,7 +90,7 @@
             </h2>
             <div class="command-group">
                 <div class="command-item">
-                    <span class="description">Create migration files:</span>
+                    <p class="description">Create migration files:</p>
                     <div class="code-wrapper">
                         <pre><code>python manage.py makemigrations</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('python manage.py makemigrations')"
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="command-item">
-                    <span class="description">Apply migrations to database:</span>
+                    <p class="description">Apply migrations to database:</p>
                     <div class="code-wrapper">
                         <pre><code>python manage.py migrate</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('python manage.py migrate')"
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="command-item">
-                    <span class="description">Start development server:</span>
+                    <p class="description">Start development server:</p>
                     <div class="code-wrapper">
                         <pre><code>python manage.py runserver</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('python manage.py runserver')"
@@ -132,9 +132,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="cheat-card">
+        <article class="cheat-card">
             <h2>
                 <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
@@ -144,10 +144,10 @@
             </h2>
             <div class="command-group">
                 <div class="command-item">
-                    <span class="description">Save packages to file:</span>
+                    <p class="description">Save packages to file:</p>
                     <div class="code-wrapper">
                         <pre><code>pip freeze &gt; requirements.txt</code></pre>
-                        <button class="copy-btn" (click)="copyToClipboard('pip freeze > requirements.txt')"
+                        <button class="copy-btn" (click)="copyToClipboard('pip freeze &gt; requirements.txt')"
                             title="Copy to clipboard">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="command-item">
-                    <span class="description">Install from file:</span>
+                    <p class="description">Install from file:</p>
                     <div class="code-wrapper">
                         <pre><code>pip install -r requirements.txt</code></pre>
                         <button class="copy-btn" (click)="copyToClipboard('pip install -r requirements.txt')"
@@ -172,6 +172,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </article>
+    </section>
+</main>

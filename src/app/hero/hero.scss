@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    
+
     height: 100vh;
     box-sizing: border-box;
-    padding-top: 80px; 
-    
+    padding-top: 80px;
+
     background-color: #1A1A1A;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-inline: 2rem;
@@ -18,7 +18,7 @@
 
         h1 {
             font-size: 64px;
-            color: #FF8093;
+            color: #40c057;
             margin-bottom: 1rem;
             line-height: 1.1;
         }
@@ -51,10 +51,18 @@
                 width: 12px;
                 height: 12px;
                 border-radius: 50%;
-                
-                &.red { background-color: #FF5F56; }
-                &.yellow { background-color: #FFBD2E; }
-                &.green { background-color: #27C93F; }
+
+                &.red {
+                    background-color: #FF5F56;
+                }
+
+                &.yellow {
+                    background-color: #FFBD2E;
+                }
+
+                &.green {
+                    background-color: #27C93F;
+                }
             }
 
             .title {
@@ -75,14 +83,14 @@
             }
 
             .command {
-                color: #FF8093;
+                color: #40c057;
                 font-weight: bold;
             }
 
             .output {
                 color: #757575;
                 margin-bottom: 0.8rem;
-                
+
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -98,7 +106,7 @@
         height: auto;
         min-height: 100vh;
         padding-bottom: 2rem;
-        
+
         .hero-text p {
             text-align: center;
         }

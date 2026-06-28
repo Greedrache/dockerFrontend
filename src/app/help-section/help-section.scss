@@ -9,7 +9,7 @@
 
     h2 {
         font-size: 40px;
-        color: #FF8093;
+        color: #40c057;
         margin-bottom: 0.5rem;
     }
 
@@ -43,8 +43,8 @@
 
         &:hover {
             transform: translateY(-5px);
-            border-color: #FF8093;
-            box-shadow: 0 10px 20px rgba(255, 128, 147, 0.15);
+            border-color: #40c057;
+            box-shadow: 0 10px 20px rgba(64, 192, 87, 0.15);
 
             .icon-wrapper .tech-icon {
                 transform: scale(1.1);
