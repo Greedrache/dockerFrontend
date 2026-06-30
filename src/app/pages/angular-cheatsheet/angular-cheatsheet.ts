@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './angular-cheatsheet.html',
   styleUrls: ['./angular-cheatsheet.scss'],
 })
-export class AngularCheatsheet {}
+export class AngularCheatsheet {
+    copyToClipboard(text: string): void {
+      navigator.clipboard.writeText(text).then(() => {
+      }).catch(err => {
+      });
+    }
+}

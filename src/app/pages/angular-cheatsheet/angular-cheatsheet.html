@@ -1,1 +1,188 @@
-<p>angular-cheatsheet works!</p>
+<main class="cheatsheet-container">
+    <header class="cheatsheet-header">
+        <figure class="django-logo-wrapper">
+            <img src="assets/angular.png" alt="Angular Logo" class="django-logo">
+        </figure>
+        <h1>Angular <span class="highlight">Cheatsheet</span></h1>
+        <p>A quick reference for common Angular commands and shortcuts.</p>
+    </header>
+
+    <section class="cheatsheet-grid">
+        <article class="cheat-card">
+            <h2>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                1. Navigation
+            </h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <p class="description">List files & folders in current directory:</p>
+                    <div class="code-wrapper">
+                        <pre><code>ls -la</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('ls -la')" title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Move into a specific folder:</p>
+                    <div class="code-wrapper">
+                        <pre><code>cd folder_name</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('cd folder_name')" title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Go up one folder level (exit directory):</p>
+                    <div class="code-wrapper">
+                        <pre><code>cd ../</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('cd ../')" title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Install Django & DRF:</p>
+                    <div class="code-wrapper">
+                        <pre><code>pip install django djangorestframework</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('pip install django djangorestframework')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="cheat-card">
+            <h2>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                </svg>
+                2. Files & Editing
+            </h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <p class="description">Create or edit a file directly in the terminal:</p>
+                    <div class="code-wrapper">
+                        <pre><code>nano &lt;file-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('nano &lt;file-name&gt;')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Force delete a file or folder permanently:</p>
+                    <div class="code-wrapper">
+                        <pre><code>rm -rf &lt;file-or-folder-name&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('rm -rf &lt;file-or-folder-name&gt;')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="cheat-card">
+            <h2>
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                3. Admin & Documentation
+            </h2>
+            <div class="command-group">
+                <div class="command-item">
+                    <p class="description">Execute a command with root/admin privileges:</p>
+                    <div class="code-wrapper">
+                        <pre><code>sudo &lt;command&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('sudo &lt;command&gt;')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Open the official manual page for a command:</p>
+                    <div class="code-wrapper">
+                        <pre><code>man &lt;command&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('man &lt;command&gt;')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Display quick inline help summary:</p>
+                    <div class="code-wrapper">
+                        <pre><code>&lt;command&gt; --help</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('&lt;command&gt; --help')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <p class="description">Filter outputs (crucial for hunting logs):</p>
+                    <div class="code-wrapper">
+                        <pre><code>&lt;command&gt; | grep &lt;keyword&gt;</code></pre>
+                        <button class="copy-btn" (click)="copyToClipboard('&lt;command&gt; | grep &lt;keyword&gt;')"
+                            title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
